@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100..900&display=swap');
+
+
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+    color: purple;
+    }
+
+header {
+    color: purple;
+    background-color: rgb(216, 216, 216);
+    height:75.90vh;
+    padding:0 8.33vw !important;
+    width: 100vw;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+h1, h2 {
+    font-family: 'Roboto Mono', monospace;
+}
+
+h1,h2,h3 {margin-top: 0; }
+
+h1 {
+    font-size: 40px;
+    vertical-align: top;
+}
+
+.carousel-inner, .carousel-item {height: 100%;}
+
+h1,
+h3,
+header p {
+    line-height: 125%;
+}
+
+header p {
+    font-size: 15px;
+    color: purple;
+}
+
+h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.navbar img {width: max-content;}
+
+header img { 
+    width: 100%;
+    transition-property: transform ;
+    transition-duration: 2s;
+    transform:translateX(0, 0);
+        
+    }
+    
+header:hover img {
+    transform: translate(70px,50px);
+    
+    };
+
+main.container-fluid {padding: 0 !important;}
+
+#section1 {
+    height: 20vh;
+    margin-bottom: 60px;
+}
+
+#section1 a, #section3 a {
+    background-color: purple;
+    color: white;  
+}
+
+
+#section2  {
+        background-color:rgb(216, 216, 216);
+        margin: 0;
+}
+
+
+
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    width: 37.5%;
+    background-color:purple;
+    display: block;
+    text-align: center;
+    padding: 11.5px 0;
+    border-radius:5px;
+}
+
+header div:first-child { width: 33.33%; 
+}
+header div:nth-child(2) {width:41.66%;}
+
+
+@media (max-width: 768px){
+
+header { 
+    
+    flex-direction: column;
+    height: auto;
+    padding:40px
+}
+
+header div:first-child, header div:nth-child(2){ width: 100%;}
+
+
+
+}
+
+footer { background-color: rgb(216, 216, 216); height: 100px;text-align: center;}
